@@ -1,0 +1,45 @@
+body {
+	background-color:#333;
+}
+
+#container {
+	background-color:#eee;
+}
+
+.inset {
+	width:90%;
+	max-width:1000px;
+	margin:0px auto;
+	padding:25px 0px;
+}
+
+header {   padding:20px; background-color:black; }
+
+#mainmenu nav {	  
+	padding:20px; 
+	background-color:black; 
+}
+#mainmenu.pinned { height: 140px; }
+#mainmenu.pinned nav {	
+	position: fixed;
+	left: 0px; top: 0px; right:0px; z-index: 100;
+}
+
+#mainmenu nav a {
+	display: inline-block;
+	border: solid 2px gray;
+	border-radius: 5px;
+	width: 120px;
+	height: 50px;
+	line-height: 48px;
+	text-align: center;
+}	
+#mainmenu nav a:hover { background-color: #225777; color: #3095ed; text-decoration: none; }
+#mainmenu nav a.theOne { background-color: #ffffff; }
+
+#main {    padding:20px; background-color:#ffffff; }
+footer {   padding:20px; background-color:#3594d4; }
+
+
+section { min-height: 700px; border-bottom: solid 10px #333; }
+
