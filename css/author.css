@@ -1,9 +1,10 @@
 body {
   background-color:#333;
+  color:rgba(245, 245, 245, 0.66);
 }
 
 #container {
-  background-color:#eee;
+  background-color:black;
 }
 
 .inset {
@@ -11,13 +12,28 @@ body {
   max-width:1000px;
   margin:0px auto;
   padding:25px 0px;
+  text-align: center;
 }
+
+#sGallery img {width: 100%;}
+#sContact img {width: 100%;}
+img {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+      /* For IE8 and earlier */
+}
+
+img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
 
 /*header {   padding:20px; background-color:black; }
 */
 #mainmenu nav {   
   padding:20px; 
-  background-color:white; 
+  background-color:black; 
 }
 #mainmenu.pinned { height: 140px; }
 #mainmenu.pinned nav {  
@@ -27,18 +43,20 @@ body {
 
 #mainmenu nav a {
   display: inline-block;
-  border: solid 2px #2a80ca;
+  /*border: solid 2px #a60e22;*/
   border-radius: 5px;
   width: 120px;
   height: 50px;
   line-height: 48px;
   text-align: center;
+  color: #818181;
+
 } 
-#mainmenu nav a:hover { background-color: #225777; color: #3095ed; text-decoration: none; }
+#mainmenu nav a:hover { background-color: #225777; color: #818181; text-decoration: none; }
 #mainmenu nav a.theOne { background-color: #ffffff; }
 
-#main {    padding:20px; background-color:#ffffff; }
-footer {   padding:20px; background-color:white; }
+#main {    padding:20px; background-color:black; }
+footer {   padding:20px; background-color:#222; }
 
 
 section { min-height: 700px; border-bottom: solid 10px #333; }
@@ -46,12 +64,22 @@ section { min-height: 700px; border-bottom: solid 10px #333; }
 /*Media Quiery*/
 @media only screen and (max-width: 700px) {
     #container {
-        background-color: lightblue;
+        background-color: #4B4954;
+
     }
 }
 
 @media only screen and (max-width: 700px) {
     #main {
-        background-color: lightblue;
+        background-color: #4B4954;
     }
 }
+@media only screen and (max-width: 700px) {
+    #sAbout img {
+        background-color: #4B4954;
+        width: 100%;
+
+    }
+}
+
+
